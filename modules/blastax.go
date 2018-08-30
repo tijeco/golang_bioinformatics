@@ -40,7 +40,7 @@ func MakeDB(fileName string, option string) {
 
 			line := scanner.Text()
 			row := strings.Fields(line)
-			// fmt.Println(row[0], row[2])
+			fmt.Println(row[0], row[2])
 
 			key := []byte(row[0])
 			value := []byte(row[2])
