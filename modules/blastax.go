@@ -15,6 +15,7 @@ func MakeDB(fileName string, option string) {
 	// line1 := true
 	// outFile := s + ".db"
 	if option == "accession_id" {
+		fmt.Println("Opening:", fileName)
 		file, err := os.Open(fileName)
 		if err != nil {
 			println(err)
